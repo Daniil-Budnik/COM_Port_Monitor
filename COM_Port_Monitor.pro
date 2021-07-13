@@ -1,0 +1,42 @@
+QT  += core gui
+QT  += serialport
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+
+RC_FILE += myapp.rc
+CONFIG += c++11
+DEFINES += QT_DEPRECATED_WARNINGS
+DEFINES += QCUSTOMPLOT_USE_OPENGL
+
+SOURCES += \
+    About/aboutwindow.cpp \
+    News/newswindow.cpp \
+    QCustomPlot/qcustomplot.cpp \
+    Setting/settingwindow.cpp \
+    Support/supportwindow.cpp \
+    main.cpp \
+    mainwindow.cpp
+
+
+HEADERS += \
+    About/aboutwindow.h \
+    News/newswindow.h \
+    QCustomPlot/qcustomplot.h \
+    Setting/settingwindow.h \
+    Support/supportwindow.h \
+    mainwindow.h
+
+FORMS += \
+    About/aboutwindow.ui \
+    News/newswindow.ui \
+    Setting/settingwindow.ui \
+    Support/supportwindow.ui \
+    mainwindow.ui
+
+
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /opt/$${TARGET}/bin
+!isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    ico.qrc

@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/ico">
+        <file>ico/byte.png</file>
+        <file>ico/ico.png</file>
+        <file>ico/pause.png</file>
+        <file>ico/start.png</file>
+        <file>ico/stop.png</file>
+        <file>ico/clear.png</file>
+        <file>ico/zoom.png</file>
+        <file>ico/inter.png</file>
+        <file>ico/begin.png</file>
+        <file>ico/end.png</file>
+        <file>ico/left.png</file>
+        <file>ico/right.png</file>
+        <file>ico/usb.png</file>
+        <file>ico/discon.png</file>
+        <file>ico/trash.png</file>
+        <file>ico/update.png</file>
+        <file>ico/save.png</file>
+    </qresource>
+</RCC>
