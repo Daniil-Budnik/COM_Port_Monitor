@@ -4,9 +4,9 @@ QT  += serialport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 RC_FILE += myapp.rc
-CONFIG += c++11
-DEFINES += QT_DEPRECATED_WARNINGS
-DEFINES += QCUSTOMPLOT_USE_OPENGL
+CONFIG += c++17
+
+
 
 SOURCES += \
     About/aboutwindow.cpp \
